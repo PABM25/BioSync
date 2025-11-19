@@ -1,30 +1,52 @@
 {
   "expo": {
-    "name": "BioSync",
-    "slug": "BioSync",
+    "name": "FitAI",
+    "slug": "fitai-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#1f2937"
     },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTabletMode": true,
+      "bundleIdentifier": "com.fitai.mobile",
+      "buildNumber": "1"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#1f2937"
       },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "package": "com.fitai.mobile",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Se requiere acceso a fotos para subir imágenes de comidas",
+          "cameraPermission": "Se requiere acceso a cámara para tomar fotos"
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Se requiere acceso a la cámara"
+        }
+      ],
+      "expo-sqlite"
+    ]
   }
 }

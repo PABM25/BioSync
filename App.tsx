@@ -1,20 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+// App.js
+import React from 'react';
+import { LogBox } from 'react-native';
+import { ThemeProvider } from '@rneui/themed';
+import RootNavigator from './src/navigation/RootNavigator';
+import { theme } from './src/styles/theme';
 
-export default function App() {
+// Ignorar warnings específicos (opcional)
+LogBox.ignoreLogs(['Non-serializable values were found in the navigation state']);
+
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ThemeProvider theme={theme}>
+      <RootNavigator />
+    </ThemeProvider>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;

@@ -9,10 +9,28 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.24.0",
+    "@react-navigation/bottom-tabs": "^7.8.5",
+    "@react-navigation/native": "^7.1.20",
+    "@react-navigation/stack": "^7.6.4",
+    "@rneui/base": "^4.0.0-rc.8",
+    "@rneui/themed": "^4.0.0-rc.8",
+    "axios": "^1.13.2",
+    "date-fns": "^4.1.0",
     "expo": "~54.0.25",
+    "expo-camera": "^17.0.9",
+    "expo-image-picker": "^17.0.8",
+    "expo-media-library": "^18.2.0",
+    "expo-permissions": "^14.4.0",
+    "expo-sqlite": "~16.0.9",
     "expo-status-bar": "~3.0.8",
+    "firebase": "^12.6.0",
     "react": "19.1.0",
-    "react-native": "0.81.5"
+    "react-native": "0.81.5",
+    "react-native-safe-area-context": "^5.6.2",
+    "react-native-screens": "^4.18.0",
+    "react-native-vector-icons": "^10.3.0",
+    "zustand": "^5.0.8"
   },
   "devDependencies": {
     "@types/react": "~19.1.0",
